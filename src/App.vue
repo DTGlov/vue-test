@@ -4,9 +4,17 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </nav>
-    <router-view/>
+    <router-view />
+    <random-number />
   </div>
 </template>
+
+<script>
+import RandomNumber from "@/components/RandomNumber.vue";
+export default {
+  components: { RandomNumber },
+};
+</script>
 
 <style>
 #app {
